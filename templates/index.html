@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ header.law_topic }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; max-width: 700px; }
+        h1 { color: #333; }
+        .question, .result-page { margin-top: 30px; }
+        button { margin-top: 20px; padding: 8px 16px; }
+        a { color: #0066cc; }
+        .reason { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h1>{{ header.law_topic }}</h1>
+    <p>{{ header.description }}</p>
+
+    {% if not result_page %}
+        <div class="question">
+            <form method="POST">
+                <p><strong>{{ question.question_text }}</strong></p>
+                <p>Legal basis: {{ question.question_legal_basis }} ({{ question.question_legal_basis_url }})</p>
+
+                {% for choice, data in question.choices.items() %}
+                    <div>
+                        <input type="radio" id="{{ choice }}" name="choice" value="{{ choice }}" required>
+                        <label for="{{ choice }}">{{ choice }}</label>
+                    </div>
+                {% endfor %}
+
+                <input type="hidden" name="question_id" value="{{ question_id }}">
+                <input type="hidden" name="next_question" value="{{ question_id }}">
+                <button type="submit">Next</button>
+            </form>
+        </div>
+
+    {% else %} 
+        <div class="result-page">
+            <h2>Result</h2>
+            {% if legal_reasons %}
+                {% for reason in legal_reasons %}
+                    <div class="reason">
+                        <p>{{ reason.text }}</p>
+                        {% if reason.url %}
+                            <p><a href="{{ reason.url }}" target="_blank">Read more</a></p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No legal reasons found.</p>
+            {% endif %}
+            <a href="/">Start over</a>
+        </div>
+    {% endif %}
+</body>
+</html>

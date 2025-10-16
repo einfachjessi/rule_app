@@ -1,0 +1,261 @@
+{
+    "header": { 
+        "law_topic": "Was the Person obligated to pay state tax in Sweden in one of the recent years (2025, 2024, 2023)?",
+        "description": "a short description"
+    },
+    "questions": {
+        "1": {
+            "question_text": "Is the person a physical person?",
+            "question_legal_basis": "3 kap. 1 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Yes": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 3 Kap. 1 §: Physical persons have to pay taxes in Sweden."
+                        }
+                    ],
+                    "next_question": "2"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable. See 3 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "2": {
+            "question_text": "Is the person subject to unlimited tax liability?",
+            "question_legal_basis": "3 kap. 3 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Resident in Sweden": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 3 Kap. 3 §"
+                        }
+                    ],
+                    "next_question": "3"
+                },
+                "Constantly resides in Sweden": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 3 Kap. 3 §"
+                        }
+                    ],
+                    "next_question": "3"
+                },
+                "Has significant connection to Sweden and has lived in Sweden before": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 3 Kap. 3 §"
+                        }
+                    ],
+                    "next_question": "3"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 3 Kap. 3 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "3": {
+            "question_text": "Where did the income come from?",
+            "question_legal_basis": "10 kap. 1 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Employment": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "4"
+                },
+                "Mission": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "4"
+                },
+                "Other income generating work of ether permanent or temporary nature": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "4"
+                },
+                "None of the below": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "4": {
+            "question_text": "Does the income fall under the category of business activity or capital?",
+            "question_legal_basis": "10 kap. 1 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Business activity": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "5"
+                },
+                "Capital": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "5"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 10 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "5": {
+            "question_text": "Was the income received as salary? (11 kap. 1 §)",
+            "question_legal_basis": "11 kap. 1 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Yes": {
+                    "next_question": "6"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 11 Kap. 1 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "6": {
+            "question_text": "In which year was the income earned?",
+            "choices": {
+                "2025": {
+                    "next_question": "7"
+                },
+                "2024": {
+                    "next_question": "8"
+                },
+                "2023": {
+                    "next_question": "9"
+                }
+            }
+        },
+        "7": {
+            "question_text": "Did the person earn more than 625 800 kr in this year?",
+            "question_legal_basis": "65 kap. 5 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Yes": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is taxable after 65 kap 5 §. The person had to pay state tax (20%)."
+                        }
+                    ],
+                    "next_question": "result_page"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 65 Kap. 5 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "8": {
+            "question_text": "Did the person earn more than 598 500 kr in this year?",
+            "question_legal_basis": "65 kap. 5 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Yes": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is taxable after 65 kap 5 §. The person had to pay state tax (20%)."
+                        }
+                    ],
+                    "next_question": "result_page"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 65 Kap. 5 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        },
+        "9": {
+            "question_text": "Did the person earn more than 598 500 kr in this year?",
+            "question_legal_basis": "65 kap. 5 §",
+            "question_legal_basis_url": "url",
+            "choices": {
+                "Yes": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is taxable after 65 kap 5 §. The person had to pay state tax (20%)."
+                        }
+                    ],
+                    "next_question": "result_page"
+                },
+                "No": {
+                    "legal_reason": [
+                        {
+                            "url": "link to law(?)",
+                            "text": "The income is not taxable within our scope. See 65 Kap. 5 §"
+                        }
+                    ],
+                    "next_question": "result_page"
+                }
+            }
+        }
+    }
+}
