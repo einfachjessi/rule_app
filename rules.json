@@ -7,12 +7,12 @@
         "1": {
             "question_text": "Is the person a physical person?",
             "question_legal_basis": "3 kap. 1 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
             "choices": {
                 "Yes": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
                             "text": "See 3 Kap. 1 §: Physical persons have to pay taxes in Sweden."
                         }
                     ],
@@ -21,7 +21,7 @@
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
                             "text": "The income is not taxable. See 3 Kap. 1 §"
                         }
                     ],

@@ -20,7 +20,9 @@
         <div class="question">
             <form method="POST">
                 <p><strong>{{ question.question_text }}</strong></p>
-                <p>Legal basis: {{ question.question_legal_basis }} ({{ question.question_legal_basis_url }})</p>
+                {% if question.question_legal_basis %}
+                    <p>Legal basis: {{ question.question_legal_basis }} (<a href="{{ question.question_legal_basis_url }}" target="_blank">Read more</a>)</p> 
+                {% endif %}
 
                 {% for choice, data in question.choices.items() %}
                     <div>
@@ -48,7 +50,7 @@
                     </div>
                 {% endfor %}
             {% else %}
-                <p>No legal reasons found.</p>
+                <p>No legal reasons found. (should not happen)</p>
             {% endif %}
             <a href="/">Start over</a>
         </div>
