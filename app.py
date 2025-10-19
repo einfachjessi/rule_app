@@ -1,7 +1,13 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 import json
+import os
+from dotenv import load_dotenv
+
+#load env variable (session key) from .env
+load_dotenv() 
 
 app = Flask(__name__) #creates Flask instance; app is now used to handle incoming web requests
+app.secret_key=os.getenv("FLASK_SECRET_KEY") #load flask key from .env
 
 # Load the rules
 with open("rules.json", "r", encoding="utf-8") as f:
@@ -13,6 +19,12 @@ header = rules["header"]
 
 @app.route("/", methods=["GET", "POST"]) # @app.route turns python code into http responses
 def index():
+
+    if "answers" not in session: #creates an empty session dictionary that stores answers (answeres will be stored as question-answer-touples)
+        session["answers"] = {}
+
+    answers = session["answers"]
+
     # Start at question 1 unless user posts answers
     current_question_id = "1"
     legal_reasons = None
@@ -20,6 +32,8 @@ def index():
     if request.method == "POST":
         current_question_id = request.form["next_question"]
         choice = request.form["choice"]
+        answers[current_question_id] = choice
+        session["answers"] = answers #update the stored answers
 
         # Determine next step based on the user's answer
         next_q = questions[request.form["question_id"]]["choices"][choice]["next_question"]
@@ -31,7 +45,9 @@ def index():
                 "index.html",
                 header=header,
                 result_page=True,
-                legal_reasons=legal_reasons
+                legal_reasons=legal_reasons,
+                answers=answers,
+                questions=questions
             )
         else:
             current_question_id = next_q
@@ -46,6 +62,10 @@ def index():
         result_page=False
     )
 
+@app.route("/restart")
+def restart():
+    session.pop("answers", None)
+    return index()
 
 if __name__ == "__main__":
     app.run(debug=True)

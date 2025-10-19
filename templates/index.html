@@ -10,6 +10,8 @@
         button { margin-top: 20px; padding: 8px 16px; }
         a { color: #0066cc; }
         .reason { margin-top: 15px; }
+        .answers { margin-top: 15px; background: #f0f8ff; padding: 15px; border-radius: 6px; }
+        .answers li { margin: 4px 0; }
     </style>
 </head>
 <body>
@@ -52,6 +54,18 @@
             {% else %}
                 <p>No legal reasons found. (should not happen)</p>
             {% endif %}
+
+            {% if answers %}
+                <div class="answers">
+                    <h3>History</h3>
+                    <ul>
+                        {% for question_id, choice in answers.items() %}
+                            <li><strong>{{ questions[question_id].question_text }}</strong><br>→ {{ choice }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+
             <a href="/">Start over</a>
         </div>
     {% endif %}
