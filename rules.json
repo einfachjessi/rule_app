@@ -1,7 +1,7 @@
 {
     "header": { 
-        "law_topic": "Was the Person obligated to pay state tax in Sweden in one of the recent years (2025, 2024, 2023)?",
-        "description": "a short description"
+        "law_topic": "State Tax Questionnaire",
+        "description": "Was the Person obligated to pay state tax in Sweden in one of the recent years (2025, 2024, 2023)?"
     },
     "questions": {
         "1": {

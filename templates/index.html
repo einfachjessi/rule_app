@@ -3,21 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ header.law_topic }}</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; max-width: 700px; }
-        h1 { color: #333; }
-        .question, .result-page { margin-top: 30px; }
-        button { margin-top: 20px; padding: 8px 16px; }
-        a { color: #0066cc; }
-        .reason { margin-top: 15px; }
-        .answers { margin-top: 15px; background: #f0f8ff; padding: 15px; border-radius: 6px; }
-        .answers li { margin: 4px 0; }
-    </style>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h1>{{ header.law_topic }}</h1>
-    <p>{{ header.description }}</p>
+        <h1>{{ header.law_topic }}</h1>
+        <p class="description">{{ header.description }}</p>
 
+    <div class="questionbox">  
     {% if not result_page %}
         <div class="question">
             <form method="POST">
@@ -69,5 +61,6 @@
             <a href="/">Start over</a>
         </div>
     {% endif %}
+    </div>
 </body>
 </html>
