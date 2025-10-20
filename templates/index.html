@@ -12,7 +12,7 @@
     <div class="questionbox">  
     {% if not result_page %}
         <div class="question">
-            <form method="POST">
+            <form method="POST" action="{{ url_for('index') }}">
                 <p><strong>{{ question.question_text }}</strong></p>
                 {% if question.question_legal_basis %}
                     <p>Legal basis: {{ question.question_legal_basis }} (<a href="{{ question.question_legal_basis_url }}" target="_blank">Read more</a>)</p> 
@@ -58,7 +58,7 @@
                 </div>
             {% endif %}
 
-            <a href="/">Start over</a>
+            <a href="{{ url_for('restart') }}">Start over</a>
         </div>
     {% endif %}
     </div>

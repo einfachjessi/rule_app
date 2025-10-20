@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, session
 import json
-import os
-from dotenv import load_dotenv
+import os #TODO
+from dotenv import load_dotenv #TODO -> wichitg?
+import secrets
 
 #load env variable (session key) from .env
 load_dotenv() 
 
 app = Flask(__name__) #creates Flask instance; app is now used to handle incoming web requests
-app.secret_key=os.getenv("FLASK_SECRET_KEY") #load flask key from .env
+app.secret_key= secrets.token_hex(16) #os.getenv("FLASK_SECRET_KEY") #load flask key from .env
 
 # Load the rules
 with open("rules.json", "r", encoding="utf-8") as f:
@@ -15,6 +16,14 @@ with open("rules.json", "r", encoding="utf-8") as f:
 
 questions = rules["questions"]
 header = rules["header"]
+
+
+# Just to make shure -> doesnt hurt :) clears the session before we do anything (to make sure the history is accurate)
+@app.before_request
+def clear_session_on_restart():
+    if not session.get("_init"):
+        session.clear()
+        session["_init"] = True
 
 
 @app.route("/", methods=["GET", "POST"]) # @app.route turns python code into http responses
@@ -64,7 +73,8 @@ def index():
 
 @app.route("/restart")
 def restart():
-    session.pop("answers", None)
+    session.clear()
+    session["_init"] = True
     return index()
 
 if __name__ == "__main__":
