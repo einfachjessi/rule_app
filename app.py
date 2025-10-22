@@ -1,14 +1,13 @@
 from flask import Flask, render_template, request, session
 import json
 import os #TODO
-from dotenv import load_dotenv #TODO -> wichitg?
+#from dotenv import load_dotenv
 import secrets
 
-#load env variable (session key) from .env
-load_dotenv() 
+
 
 app = Flask(__name__) #creates Flask instance; app is now used to handle incoming web requests
-app.secret_key= secrets.token_hex(16) #os.getenv("FLASK_SECRET_KEY") #load flask key from .env
+app.secret_key= secrets.token_hex(16) 
 
 # Load the rules
 with open("rules.json", "r", encoding="utf-8") as f:
@@ -35,7 +34,7 @@ def index():
     answers = session["answers"]
 
     # Start at question 1 unless user posts answers
-    current_question_id = "1"
+    current_question_id = "Q1"
     legal_reasons = None
 
     if request.method == "POST":
