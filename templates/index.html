@@ -52,7 +52,12 @@
                     <h3>History</h3>
                     <ul>
                         {% for question_id, choice in answers.items() %}
-                            <li><strong>{{ questions[question_id].question_text }}</strong><br>→ {{ choice }}</li>
+                            <li>
+                                <strong>{{question_id}}: {{ questions[question_id].question_text }}</strong><br>→ {{ choice }}
+                                {% if questions[question_id].question_legal_basis_url %}
+                                    (<a href="{{ questions[question_id].question_legal_basis_url }}" target="_blank">{{ questions[question_id].question_legal_basis }}</a>)
+                                {% endif %}
+                            </li>
                         {% endfor %}
                     </ul>
                 </div>
