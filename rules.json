@@ -1,10 +1,10 @@
 {
     "header": { 
         "law_topic": "State Tax Questionnaire",
-        "description": "Was the Person obligated to pay state tax in Sweden in one of the recent years (2025, 2024, 2023)?"
+        "description": "Was the person obligated to pay state tax in Sweden in one of the recent years (2025, 2024, 2023)?"
     },
     "questions": {
-        "1": {
+        "Q1": {
             "question_text": "Is the person a physical person?",
             "question_legal_basis": "3 kap. 1 §",
             "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
@@ -16,7 +16,7 @@
                             "text": "See 3 Kap. 1 §: Physical persons have to pay taxes in Sweden."
                         }
                     ],
-                    "next_question": "2"
+                    "next_question": "Q2"
                 },
                 "No": {
                     "legal_reason": [
@@ -29,42 +29,42 @@
                 }
             }
         },
-        "2": {
+        "Q2": {
             "question_text": "Is the person subject to unlimited tax liability?",
             "question_legal_basis": "3 kap. 3 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
             "choices": {
                 "Resident in Sweden": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
                             "text": "See 3 Kap. 3 §"
                         }
                     ],
-                    "next_question": "3"
+                    "next_question": "Q3"
                 },
                 "Constantly resides in Sweden": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
                             "text": "See 3 Kap. 3 §"
                         }
                     ],
-                    "next_question": "3"
+                    "next_question": "Q3"
                 },
                 "Has significant connection to Sweden and has lived in Sweden before": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
                             "text": "See 3 Kap. 3 §"
                         }
                     ],
-                    "next_question": "3"
+                    "next_question": "Q3"
                 },
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
                             "text": "The income is not taxable within our scope. See 3 Kap. 3 §"
                         }
                     ],
@@ -72,42 +72,42 @@
                 }
             }
         },
-        "3": {
+        "Q3": {
             "question_text": "Where did the income come from?",
             "question_legal_basis": "10 kap. 1 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
             "choices": {
                 "Employment": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "See 10 Kap. 1 §"
                         }
                     ],
-                    "next_question": "4"
+                    "next_question": "Q4"
                 },
                 "Mission": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "See 10 Kap. 1 §"
                         }
                     ],
-                    "next_question": "4"
+                    "next_question": "Q4"
                 },
                 "Other income generating work of ether permanent or temporary nature": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "See 10 Kap. 1 §"
                         }
                     ],
-                    "next_question": "4"
+                    "next_question": "Q4"
                 },
                 "None of the below": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "The income is not taxable within our scope. See 10 Kap. 1 §"
                         }
                     ],
@@ -115,33 +115,33 @@
                 }
             }
         },
-        "4": {
+        "Q4": {
             "question_text": "Does the income fall under the category of business activity or capital?",
             "question_legal_basis": "10 kap. 1 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
             "choices": {
                 "Business activity": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "See 10 Kap. 1 §"
                         }
                     ],
-                    "next_question": "5"
+                    "next_question": "Q5"
                 },
                 "Capital": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "See 10 Kap. 1 §"
                         }
                     ],
-                    "next_question": "5"
+                    "next_question": "Q5"
                 },
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
                             "text": "The income is not taxable within our scope. See 10 Kap. 1 §"
                         }
                     ],
@@ -149,18 +149,18 @@
                 }
             }
         },
-        "5": {
-            "question_text": "Was the income received as salary? (11 kap. 1 §)",
+        "Q5": {
+            "question_text": "Was the income received as salary?",
             "question_legal_basis": "11 kap. 1 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K11",
             "choices": {
                 "Yes": {
-                    "next_question": "6"
+                    "next_question": "Q6"
                 },
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K11",
                             "text": "The income is not taxable within our scope. See 11 Kap. 1 §"
                         }
                     ],
@@ -168,29 +168,29 @@
                 }
             }
         },
-        "6": {
+        "Q6": {
             "question_text": "In which year was the income earned?",
             "choices": {
                 "2025": {
-                    "next_question": "7"
+                    "next_question": "Q7"
                 },
                 "2024": {
-                    "next_question": "8"
+                    "next_question": "Q8"
                 },
                 "2023": {
-                    "next_question": "9"
+                    "next_question": "Q9"
                 }
             }
         },
-        "7": {
+        "Q7": {
             "question_text": "Did the person earn more than 625 800 kr in this year?",
             "question_legal_basis": "65 kap. 5 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
             "choices": {
                 "Yes": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
                             "text": "The income is taxable after 65 kap 5 §. The person had to pay state tax (20%)."
                         }
                     ],
@@ -199,7 +199,7 @@
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
                             "text": "The income is not taxable within our scope. See 65 Kap. 5 §"
                         }
                     ],
@@ -207,15 +207,15 @@
                 }
             }
         },
-        "8": {
+        "Q8": {
             "question_text": "Did the person earn more than 598 500 kr in this year?",
             "question_legal_basis": "65 kap. 5 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
             "choices": {
                 "Yes": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
                             "text": "The income is taxable after 65 kap 5 §. The person had to pay state tax (20%)."
                         }
                     ],
@@ -224,7 +224,7 @@
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
                             "text": "The income is not taxable within our scope. See 65 Kap. 5 §"
                         }
                     ],
@@ -232,15 +232,15 @@
                 }
             }
         },
-        "9": {
+        "Q9": {
             "question_text": "Did the person earn more than 598 500 kr in this year?",
             "question_legal_basis": "65 kap. 5 §",
-            "question_legal_basis_url": "url",
+            "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
             "choices": {
                 "Yes": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
                             "text": "The income is taxable after 65 kap 5 §. The person had to pay state tax (20%)."
                         }
                     ],
@@ -249,7 +249,7 @@
                 "No": {
                     "legal_reason": [
                         {
-                            "url": "link to law(?)",
+                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K65",
                             "text": "The income is not taxable within our scope. See 65 Kap. 5 §"
                         }
                     ],
