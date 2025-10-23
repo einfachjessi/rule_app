@@ -53,6 +53,7 @@
                     "next_question": "Q3"
                 },
                 "Has significant connection to Sweden and has lived in Sweden before": {
+                    "info": "Find more information in 3 kap. 7 §",
                     "legal_reason": [
                         {
                             "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",

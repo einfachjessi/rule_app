@@ -15,13 +15,16 @@
             <form method="POST" action="{{ url_for('index') }}">
                 <p><strong>{{ question.question_text }}</strong></p>
                 {% if question.question_legal_basis %}
-                    <p>Legal basis: {{ question.question_legal_basis }} (<a href="{{ question.question_legal_basis_url }}" target="_blank">Read more</a>)</p> 
+                    <p>Legal basis: {{ question.question_legal_basis }} (<a href="{{ question.question_legal_basis_url }}" target="_blank">Read the paragraph here</a>)</p> 
                 {% endif %}
 
                 {% for choice, data in question.choices.items() %}
                     <div>
                         <input type="radio" id="{{ choice }}" name="choice" value="{{ choice }}" required>
                         <label for="{{ choice }}">{{ choice }}</label>
+                        {% if data.info %}
+                            <div class="info"> 🛈 {{ data.info }}</div> 
+                        {% endif %}
                     </div>
                 {% endfor %}
 
