@@ -1,12 +1,10 @@
 from flask import Flask, render_template, request, session
 import json
-import os #TODO
-#from dotenv import load_dotenv
 import secrets
 
 
 
-app = Flask(__name__) #creates Flask instance; app is now used to handle incoming web requests
+app = Flask(__name__) #creates Flask instance; app is used to handle the incoming web requests
 app.secret_key= secrets.token_hex(16) 
 
 # Load the rules
@@ -17,7 +15,7 @@ questions = rules["questions"]
 header = rules["header"]
 
 
-# Just to make shure -> doesnt hurt :) clears the session before we do anything (to make sure the history is accurate)
+# Just to make sure -> doesn't hurt :) clears the session before we do anything (to make sure the history is accurate)
 @app.before_request
 def clear_session_on_restart():
     if not session.get("_init"):
@@ -28,12 +26,12 @@ def clear_session_on_restart():
 @app.route("/", methods=["GET", "POST"]) # @app.route turns python code into http responses
 def index():
 
-    if "answers" not in session: #creates an empty session dictionary that stores answers (answeres will be stored as question-answer-touples)
+    if "answers" not in session: #creates an empty session dictionary that stores answers (answers are be stored as question-answer-tuples)
         session["answers"] = {}
 
     answers = session["answers"]
 
-    # Start at question 1 unless user posts answers
+    # Start at question Q1 unless user posts answers
     current_question_id = "Q1"
     legal_reasons = None
 
