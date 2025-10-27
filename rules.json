@@ -10,12 +10,6 @@
             "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
             "choices": {
                 "Yes": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
-                            "text": "See 3 Kap. 1 §: Physical persons have to pay taxes in Sweden."
-                        }
-                    ],
                     "next_question": "Q2"
                 },
                 "No": {
@@ -35,31 +29,15 @@
             "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
             "choices": {
                 "Resident in Sweden": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
-                            "text": "See 3 Kap. 3 §"
-                        }
-                    ],
+                    "info": "Has their actual residence in Sweden",
                     "next_question": "Q3"
                 },
                 "Constantly resides in Sweden": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
-                            "text": "See 3 Kap. 3 §"
-                        }
-                    ],
+                    "info": "Coherent stay of at least 6 months",
                     "next_question": "Q3"
                 },
                 "Has significant connection to Sweden and has lived in Sweden before": {
                     "info": "Find more information in 3 kap. 7 §",
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K3",
-                            "text": "See 3 Kap. 3 §"
-                        }
-                    ],
                     "next_question": "Q3"
                 },
                 "No": {
@@ -79,30 +57,12 @@
             "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
             "choices": {
                 "Employment": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
-                            "text": "See 10 Kap. 1 §"
-                        }
-                    ],
                     "next_question": "Q4"
                 },
                 "Mission": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
-                            "text": "See 10 Kap. 1 §"
-                        }
-                    ],
                     "next_question": "Q4"
                 },
                 "Other income generating work of ether permanent or temporary nature": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
-                            "text": "See 10 Kap. 1 §"
-                        }
-                    ],
                     "next_question": "Q4"
                 },
                 "None of the options": {
@@ -122,21 +82,9 @@
             "question_legal_basis_url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
             "choices": {
                 "Business activity": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
-                            "text": "See 10 Kap. 1 §"
-                        }
-                    ],
                     "next_question": "Q5"
                 },
                 "Capital": {
-                    "legal_reason": [
-                        {
-                            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/#K10",
-                            "text": "See 10 Kap. 1 §"
-                        }
-                    ],
                     "next_question": "Q5"
                 },
                 "No": {
