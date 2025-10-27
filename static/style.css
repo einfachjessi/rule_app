@@ -1,7 +1,7 @@
 body { 
     font-family: Arial, sans-serif; 
     margin: 40px; 
-    background: #94b9ff; 
+    background: #26a795; 
 }
 
 h1 { 
@@ -29,7 +29,7 @@ h1 {
 button { 
     margin-top: 20px; 
     padding: 8px 16px; 
-    background: #3363b4; 
+    background:#2664a7; 
     color: #fff; 
 }
 a { 
@@ -53,6 +53,8 @@ a {
     display: inline-block;
     color: #0077cc;
     background-color: #fff;
-    padding: 2px; 
+    padding: 0px;
+    padding-left: 5px; 
+    padding-right: 5px; 
     border-radius: 6px;
 }
